@@ -8,6 +8,7 @@ from tensorflow.keras.callbacks import TensorBoard
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 #Imagenes
+#Se ingresan las rutas en las que tengas los datos para entrenar a la ia
 entrenamiento = r"Ingresar la ruta de la capetas con los archvos para entrenar la ia"
 validacion = r"Ingresar la ruta de la carpeta con los archivos para la Validacion de la ia"
 
@@ -116,7 +117,7 @@ ModeloCNN2.compile(optimizer='adam',
 
 
 #Se observa y entrena las redes
-#Para visualzar: tenserboard --logdir=r"C:\Users\ios27\OneDrive\Escritorio\Estructura\proyecto\red neuronal convolucional"
+#Para visualzar: tenserboard --logdir=r"logs"
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir='logs')
 
 #Entrenamos Convoluvional con dropout
