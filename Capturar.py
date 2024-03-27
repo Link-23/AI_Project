@@ -1,3 +1,4 @@
+#Este archivo es una versión preliminar de la IA, se realizó con fines de aprendizaje 
 # Importar librerias
 import os
 import cv2
